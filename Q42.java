@@ -3,14 +3,16 @@ class Initializer{
 	static{
 		initialValue = 1000;
 	}
-	static void print(){
-		System.out.println("The initial value is:"+initialValue);
-	}
 }
 class Q42{
 	public static void main(String[] arg){
-		Initializer.print();
-		Initializer obj = new Initializer();
-		Initializer.print();
+		// Print the value of initialValue before creating an instance
+        System.out.println("Value of initialValue before creating instance: " + Initializer.initialValue);
+        
+        // Create an instance of Initializer
+        Initializer obj = new Initializer();
+        
+        // Print the value of initialValue after creating an instance
+        System.out.println("Value of initialValue after creating instance: " + Initializer.initialValue);
 	}
 }
